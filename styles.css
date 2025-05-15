@@ -197,8 +197,9 @@ align-items: center;
 .subtitle {
     font-size: 1.5rem;
     margin: 2rem 0;
-    color: var(--secondary);
+    color: rgb(175, 12, 12);
 }
+
 
 .cta-buttons {
     display: flex;
