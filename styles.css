@@ -7,13 +7,15 @@
 
 :root {
     --primary: grey;
-    --secondary: black;
-    --background: rgb(248, 202, 197);
-    --text: #ffffff;
+    --secondary: rgb(63, 39, 39);
+    --background: #f8cac5;
+    /* --text: #5f5f5f; */
+    --text: #3E100F;
 }
 
 body {
     font-family: 'VT323', monospace;
+    /* font-family: 'Helvetica', sans-serif; */
     background: var(--background);
     color: var(--text);
     overflow-x: hidden;
@@ -90,16 +92,17 @@ nav {
         background: linear-gradient(45deg, var(--primary), var(--secondary));
         background-clip: text; /* Standard property for compatibility */
         -webkit-background-clip: text; /* Vendor-prefixed property for WebKit-based browsers */
-        color: white;
+        color: rgb(0, 0, 0);
         text-shadow: 0 0 10px rgba(32, 29, 32, 0.5);
     }background-clip: text;
-    color: white;
+    color: rgb(241, 241, 241);
     text-shadow: 0 0 10px rgba(22, 20, 22, 0.5);
 }
 
 .nav-links {
     display: flex;
     gap: 2rem;
+    --text: #ffffff;
 }
 
 .me{
@@ -176,9 +179,9 @@ align-items: center;
     font-size: 5rem;
     text-transform: uppercase;
     position: relative;
-    text-shadow: 
+    /* text-shadow: 
         2px 2px var(--primary),
-        -2px -2px var(--secondary);
+        -2px -2px var(--secondary); */
     animation: glitch 3s infinite;
 }
 
@@ -217,13 +220,17 @@ align-items: center;
 }
 
 .button-primary {
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    /* background: linear-gradient(45deg, var(--primary), var(--secondary)); */
+    background: rgb(255, 236, 236);
     color: var(--text);
 }
 
 .button-secondary {
-    background: transparent;
+    /* background: transparent;
     border: 2px solid var(--primary);
+    color: var(--text); */
+     /* background: linear-gradient(45deg, var(--primary), var(--secondary)); */
+    background: rgb(255, 236, 236);
     color: var(--text);
 }
 
@@ -258,7 +265,7 @@ align-items: center;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0.2rem;
+    gap: 1rem;
 }
 
 .feature-card {
